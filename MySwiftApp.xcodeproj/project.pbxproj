@@ -10,6 +10,7 @@
 		4059908E194FC8B000F6761A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4059908D194FC8B000F6761A /* AppDelegate.swift */; };
 		40599090194FC8B000F6761A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4059908F194FC8B000F6761A /* Images.xcassets */; };
 		4059909C194FC8B000F6761A /* MySwiftAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4059909B194FC8B000F6761A /* MySwiftAppTests.swift */; };
+		405990AA194FDBBB00F6761A /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405990A9194FDBBB00F6761A /* SwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,7 @@
 		40599095194FC8B000F6761A /* MySwiftAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4059909A194FC8B000F6761A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4059909B194FC8B000F6761A /* MySwiftAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftAppTests.swift; sourceTree = "<group>"; };
+		405990A9194FDBBB00F6761A /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				4059908D194FC8B000F6761A /* AppDelegate.swift */,
+				405990A9194FDBBB00F6761A /* SwiftViewController.swift */,
 				4059908F194FC8B000F6761A /* Images.xcassets */,
 				4059908B194FC8B000F6761A /* Supporting Files */,
 			);
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				405990AA194FDBBB00F6761A /* SwiftViewController.swift in Sources */,
 				4059908E194FC8B000F6761A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MySwiftApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -319,6 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MySwiftApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

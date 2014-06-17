@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
     var window: UIWindow?
+    var navigationController: UINavigationController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
@@ -19,6 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
+        
+        var swiftController: SwiftViewController? = SwiftViewController(nibName: nil, bundle: nil)
+        self.navigationController = UINavigationController(rootViewController: swiftController)
+        self.window!.rootViewController = self.navigationController
+        
+
+        
+        
         return true
     }
 
