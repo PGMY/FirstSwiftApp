@@ -15,7 +15,7 @@ class SwiftViewController: UIViewController {
     init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
         super.init(nibName:nibNameOrNil, bundle:nibBundleOrNil)
         self.view!.backgroundColor = UIColor.redColor()
-        self.tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)
+        self.tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)        // enum は .Plain の . をつけて指定する
         self.view!.addSubview(self.tableView)
     }
     override func viewDidLoad(){

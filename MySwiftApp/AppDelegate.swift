@@ -11,15 +11,16 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
-    var window: UIWindow?
+    var window: UIWindow?       // 初期値はnil nilが入る場合は?をつける
     var navigationController: UINavigationController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        // Override point for customization after application launch.
+        // 背景を変更する場合windowはnilであってはならないので!をつけておく
         self.window!.backgroundColor = UIColor.whiteColor()
         
+        // 
         let swiftController: SwiftViewController! = SwiftViewController(nibName: nil, bundle: nil)
         self.navigationController = UINavigationController(rootViewController: swiftController)
         self.window!.rootViewController = self.navigationController
