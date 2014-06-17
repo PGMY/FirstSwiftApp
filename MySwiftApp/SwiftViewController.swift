@@ -9,9 +9,14 @@
 import UIKit
 
 class SwiftViewController: UIViewController {
+    
+    var tableView:UITableView?
+    
     init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
         super.init(nibName:nibNameOrNil, bundle:nibBundleOrNil)
         self.view!.backgroundColor = UIColor.redColor()
+        self.tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)
+        self.view!.addSubview(self.tableView)
     }
     override func viewDidLoad(){
         super.viewDidLoad()

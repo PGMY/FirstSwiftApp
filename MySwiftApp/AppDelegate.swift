@@ -19,14 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         // Override point for customization after application launch.
         self.window!.backgroundColor = UIColor.whiteColor()
-        self.window!.makeKeyAndVisible()
         
-        var swiftController: SwiftViewController? = SwiftViewController(nibName: nil, bundle: nil)
+        let swiftController: SwiftViewController! = SwiftViewController(nibName: nil, bundle: nil)
         self.navigationController = UINavigationController(rootViewController: swiftController)
         self.window!.rootViewController = self.navigationController
         
-
-        
+        self.window!.makeKeyAndVisible()
         
         return true
     }
