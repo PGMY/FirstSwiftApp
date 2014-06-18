@@ -11,6 +11,7 @@
 		40599090194FC8B000F6761A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4059908F194FC8B000F6761A /* Images.xcassets */; };
 		4059909C194FC8B000F6761A /* MySwiftAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4059909B194FC8B000F6761A /* MySwiftAppTests.swift */; };
 		405990AA194FDBBB00F6761A /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405990A9194FDBBB00F6761A /* SwiftViewController.swift */; };
+		40A3B903195176F4009F0958 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A3B902195176F4009F0958 /* UIColorEx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		4059909A194FC8B000F6761A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4059909B194FC8B000F6761A /* MySwiftAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftAppTests.swift; sourceTree = "<group>"; };
 		405990A9194FDBBB00F6761A /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		40A3B902195176F4009F0958 /* UIColorEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				4059908D194FC8B000F6761A /* AppDelegate.swift */,
 				405990A9194FDBBB00F6761A /* SwiftViewController.swift */,
+				40A3B902195176F4009F0958 /* UIColorEx.swift */,
 				4059908F194FC8B000F6761A /* Images.xcassets */,
 				4059908B194FC8B000F6761A /* Supporting Files */,
 			);
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A3B903195176F4009F0958 /* UIColorEx.swift in Sources */,
 				405990AA194FDBBB00F6761A /* SwiftViewController.swift in Sources */,
 				4059908E194FC8B000F6761A /* AppDelegate.swift in Sources */,
 			);
@@ -385,6 +389,7 @@
 				405990A1194FC8B000F6761A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		405990A2194FC8B000F6761A /* Build configuration list for PBXNativeTarget "MySwiftAppTests" */ = {
 			isa = XCConfigurationList;
@@ -393,6 +398,7 @@
 				405990A4194FC8B000F6761A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
