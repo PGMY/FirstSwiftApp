@@ -34,6 +34,7 @@
 		4059909B194FC8B000F6761A /* MySwiftAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftAppTests.swift; sourceTree = "<group>"; };
 		405990A9194FDBBB00F6761A /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		40A3B902195176F4009F0958 /* UIColorEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
+		F384D04319569DF00076215D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		4059907F194FC8B000F6761A = {
 			isa = PBXGroup;
 			children = (
+				F384D04319569DF00076215D /* MyPlayground.playground */,
 				4059908A194FC8B000F6761A /* MySwiftApp */,
 				40599098194FC8B000F6761A /* MySwiftAppTests */,
 				40599089194FC8B000F6761A /* Products */,

@@ -12,7 +12,7 @@ class SwiftViewController: UIViewController {
     
     var tableView:UITableView?
     
-    init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
+    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle!) {
         super.init(nibName:nibNameOrNil, bundle:nibBundleOrNil)
         self.view!.backgroundColor = UIColor.redColor()
         self.tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)        // enum は .Plain の . をつけて指定する
