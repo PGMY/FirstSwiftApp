@@ -18,6 +18,7 @@ class SwiftViewController: UIViewController {
         self.tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)        // enum は .Plain の . をつけて指定する
         self.view!.addSubview(self.tableView)
         UIColor.test()
+        var a : String 
     }
     override func viewDidLoad(){
         super.viewDidLoad()
