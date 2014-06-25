@@ -8,23 +8,54 @@
 
 import UIKit
 
-class SwiftViewController: UIViewController {
+class SwiftViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var tableView:UITableView?
+    var sampleArray :Array<SampleData>?
+    
+    var tableView   :UITableView?
     
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle!) {
         super.init(nibName:nibNameOrNil, bundle:nibBundleOrNil)
+        
         self.view!.backgroundColor = UIColor.redColor()
-        self.tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)        // enum は .Plain の . をつけて指定する
-        self.view!.addSubview(self.tableView)
-        UIColor.test()
-        var a : String 
+        self.sampleArray = SampleData.allValues
+//        self.sampleArray = ["Sample1"]
     }
     override func viewDidLoad(){
         super.viewDidLoad()
+        // tableView
+        self.tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)        //
+        self.tableView!.dataSource = self
+        self.tableView!.delegate = self
+        self.tableView!.registerClass(UITableViewCell.self, forCellReuseIdentifier:"UITableViewCell")
+        self.view!.addSubview(self.tableView)
+    }
+    
+    // UITableViewDataSource
+    func numberOfSectionsInTableView(tableView: UITableView!) -> Int
+    {
+        return 1
+    }
+    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+        return self.sampleArray!.count
+    }
+    
+    // UITableViewDelegate
+    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+        let cell = tableView.dequeueReusableCellWithIdentifier("UITableViewCell", forIndexPath: indexPath) as UITableViewCell!
+        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        cell.textLabel.text = self.sampleArray![indexPath.row].toRaw()
+        
+        return cell
     }
     
     
+    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        var svc:SampleViewController = SampleViewController(sampleData: self.sampleArray![indexPath.row])
+        self.navigationController!.pushViewController(svc, animated: true)
+        
+//        func pushViewController(viewController: UIViewController!, animated: Bool)
+    }
 }
 
 

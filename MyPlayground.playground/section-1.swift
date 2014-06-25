@@ -64,14 +64,10 @@ hoge = "a"
 sample(hoge!)
 
 
-
-
-
-
-
-
-
-
-
-
+enum SampleData : String {
+    case NavigationBar = "UINavigationBar",Label = "UILabel"
+    static let allValues = [NavigationBar,Label]
+}
+var data : Array = SampleData.allValues
+println(data[0].toRaw())
 
